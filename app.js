@@ -13,7 +13,7 @@ app.get('',function(req,res){
 	res.render('index.html')
 });
 
-
+app.env
 //server
 app.listen(process.env.PORT || 5000);
 console.log('app live in 5000');

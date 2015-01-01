@@ -1,0 +1,37 @@
+> is direct decendant in jquery
+
+traversing the dom --
+two steps to traversin
+1)selection of  obj
+2)traversal - find and other things
+	$("li").first()
+
+	Walking the down DOM---
+		$("li").first().next();
+		this is chaining methods
+		.children() will walk down it is same as direct decendants
+
+	Walking Up the DOM.. starting at child
+		.parent() will walk up to parent
+
+---------------------------------
+	Manipulating the dom
+	Appending the DOM
+		.appendTo(<element>)
+		.prependTo(<element>)
+		.insertAfter(<element>)
+		.insertBefore(<element>)
+		$(this).after(var)
+
+	Transversing and filtering 
+		data is html5 attribute to assign data to something
+		can assigned variable as data-variablename
+		
+		FILTERS,
+			$('.tour').filter('.onsale')
+		EVENT DELEGATION
+			$('tour').on('click','button',function(){}); 
+			this will only target a button inside of a .tour class
+
+
+
