@@ -33,5 +33,9 @@ two steps to traversin
 			$('tour').on('click','button',function(){}); 
 			this will only target a button inside of a .tour class
 
+4.2 Listening to DOM EVENTS
+	On Dom LOAD
+		
+
 
 

@@ -2,7 +2,7 @@
   "name": "jqtest",
   "version": "1.0.0",
   "description": "Testing Jquery",
-  "main": "app.js",
+  "main": "server/server.js",
   "dependencies": {
     "ejs": "^1.0.0",
     "nodemon": "^1.2.1",
