@@ -8,6 +8,8 @@ app.set('views', __dirname + '');
 app.engine('html', require('ejs').renderFile);
  
 app.use(express.static(root + '/public'));
+app.use(express.static(root + '/components'));
+
  
 //routes
 app.get('',function(req,res){
@@ -18,4 +20,3 @@ app.env
 //server
 app.listen(process.env.PORT || 5000);
 console.log('app live in 5000');
-
