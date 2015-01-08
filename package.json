@@ -1,6 +1,6 @@
 {
-  "name": "jqtest",
-  "version": "1.0.0",
+  "name": "2",
+  "version": "1.0.1",
   "description": "Testing Jquery",
   "main": "server/server.js",
   "dependencies": {
@@ -18,5 +18,11 @@
     "url": "https://github.com/fredk212/MobileTest2.git"
   },
   "author": "Fredrick Khoury <fredk1018@gmail.com>",
-  "license": "ISC"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/fredk212/MobileTest2/issues"
+  },
+  "keywords": [
+    "map"
+  ]
 }

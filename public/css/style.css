@@ -1,24 +1,4 @@
-.tour{
-	background-color: #A5A0FE;
-	padding: 5px;
-	box-sizing: border-box;
-	float: left;
-	min-height: 6em;
-	position: relative;
-	list-style: none;
-	float: left;
-	margin:.45em;
-}
-.tour.highlight{
-	background-color:#A3EF8F; 
-}
-#filters{
-	float:left;
-	list-style:none;
-}
-#filters button{
-	background-color: #A5A0FE;
-}
-#filters button.highlight{
-	background-color:#A3EF8F;
+#map-canvas{
+	height: 40%;
+	width: 40%;
 }
