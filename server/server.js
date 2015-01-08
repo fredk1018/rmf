@@ -3,14 +3,11 @@ var path = require('path');
 var app = express();
 var root = path.normalize(__dirname + '/..');
 //config
- 
 app.set('views', __dirname + '');
 app.engine('html', require('ejs').renderFile);
  
 app.use(express.static(root + '/public'));
 app.use(express.static(root + '/components'));
-
- 
 //routes
 app.get('',function(req,res){
         res.render('../public/views/index.html')
