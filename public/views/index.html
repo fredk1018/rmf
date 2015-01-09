@@ -12,17 +12,12 @@
 	<script type="text/javascript" src="/js/map.js"></script>
 	<script type="text/javascript" src="/js/filter.js"></script>
   </head>
-  <body class="container">
-
-  		<div id="map-canvas"></div>
-  		<div id="filters">
-  			<ul>
-  			<li class="trail1">
-  				<button class="showT">Show Trail 1</button><button class="hideT">Hide Trail 1</button></li>
-  			<li class="trail2">
-  				<button class="showT">Show Trail 2</button><button class="hideT">Hide Trail 2</button></li>	
-  			</ul>
-  		</div>
+  <body>
+    <div id="panel">
+      <input onclick="removeLine();" type=button value="Remove line">
+      <input onclick="addLine();" type=button value="Restore line">
+    </div>
+    <div id="map-canvas"></div>
   </body>
 </html>
 
