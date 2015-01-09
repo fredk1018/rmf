@@ -3,12 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>jQuery Node Express Test App</title>
+	<title>Trail Map</title>
 	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG1mocxosoC9cq-ucFO3vdZCcUxyKa6B4&sensor=true"> </script>
 	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 	<script type="text/javascript" src="/jQuery/dist/jquery.js"></script>
 	<script type="text/javascript" src="/js/map.js"></script>
 
+
+
+	<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>	
 </head>
 <body>
 	<div id="content">
