@@ -1,4 +1,3 @@
-#map-canvas{
-	height: 40%;
-	width: 40%;
+html body #map-canvas{
+	height: 100%;
 }
