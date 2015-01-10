@@ -122,7 +122,7 @@ function initialize() {
   });
    bmrrLoopNorthTrail = new google.maps.Polyline({
     path: bmrrLoopNorthPair,
-    strokeColor: '#8400FF',
+    strokeColor: '#005A37',
     strokeOpacity: 1.0,
     strokeWeight: 2
   });
