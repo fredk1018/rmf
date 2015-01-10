@@ -51,23 +51,15 @@
 			"file": "public/js/map.js",
 			"settings":
 			{
-				"buffer_size": 3328,
+				"buffer_size": 4141,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/fk/d/rmpgps/index.html",
-			"settings":
-			{
-				"buffer_size": 3167,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "public/views/index.html",
 			"settings":
 			{
-				"buffer_size": 924,
+				"buffer_size": 934,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,9 +83,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 369.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"c",
+				"Color Picker"
+			],
 			[
 				"color",
 				"Color Picker"
@@ -151,6 +147,7 @@
 	],
 	"file_history":
 	[
+		"/home/fk/d/rmpgps/index.html",
 		"/home/fk/d/rmf/public/css/style.css",
 		"/home/fk/d/rmf/public/views/index.html",
 		"/home/fk/d/rmf/components/jQuery/.bower.json",
@@ -158,7 +155,6 @@
 		"/home/fk/d/rmf/public/js/filter.js",
 		"/home/fk/d/rmf/server/server.js",
 		"/home/fk/d/rmf/package.json",
-		"/home/fk/d/rmpgps/index.html",
 		"/home/fk/d/rmf/public/js/boostrap/css/bootstrap.css",
 		"/home/fk/d/rmf/rmf.sublime-project",
 		"/home/fk/d/rmpgps/style.css",
@@ -170,7 +166,7 @@
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -184,6 +180,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pushpin11",
+			"11",
+			"songo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -192,7 +191,7 @@
 		"replace_history":
 		[
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -210,15 +209,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3328,
+						"buffer_size": 4141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								3669,
+								3669
 							]
 						],
 						"settings":
@@ -331,7 +330,7 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 506.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -340,49 +339,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/fk/d/rmpgps/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2308,
-								2308
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 544.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "public/views/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 924,
+						"buffer_size": 934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								922,
-								922
+								863,
+								863
 							]
 						],
 						"settings":
@@ -499,11 +468,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "public/css/style.css",
 					"semi_transient": false,
 					"settings":
@@ -632,11 +601,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "/home/fk/Downloads/RM Color Corrected V2.kml",
 					"semi_transient": false,
 					"settings":
@@ -648,8 +617,8 @@
 						"selection":
 						[
 							[
-								15290,
-								15290
+								12640,
+								12640
 							]
 						],
 						"settings":
@@ -762,7 +731,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9363.0,
+						"translation.y": 7025.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
