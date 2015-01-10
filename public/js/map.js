@@ -31,7 +31,7 @@ function initialize() {
 
 //Begin Setting Up Generic Map Info
   var mapOptions = {
-    zoom: 14,
+    zoom: 15,
     center: new google.maps.LatLng(33.4474907659445,-86.86759306684011),
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
