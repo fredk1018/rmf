@@ -12,12 +12,18 @@
 	<script type="text/javascript" src="/js/map.js"></script>
 	<script type="text/javascript" src="/js/filter.js"></script>
   </head>
-  <body>
+  <body class="container">
     <div id="panel">
+    <div class="row">
       <input onclick="removeSongo();" type=button value="Remove Songo Trail">
       <input onclick="addSongo();" type=button value="Add Songo Trail">
     </div>
-    <div id="map-canvas"></div>
+     <div class="row">
+      <input onclick="removeReddingIshkoodaEast();" type=button value="Remove Reddint/Ishkooda(east) Trail">
+      <input onclick="addReddingIshkoodaEast();" type=button value="Add Redding/Ishkooda(east) Trail">
+    </div>
+    </div>
+    <div id="map-canvas" class="row"></div>
   </body>
 </html>
 
