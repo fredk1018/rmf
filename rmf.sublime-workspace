@@ -48,18 +48,26 @@
 	"buffers":
 	[
 		{
-			"file": "components/jQuery/.bower.json",
+			"file": "public/js/map.js",
 			"settings":
 			{
-				"buffer_size": 755,
+				"buffer_size": 3328,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/fk/d/rmpgps/index.html",
+			"settings":
+			{
+				"buffer_size": 3167,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "public/views/index.html",
 			"settings":
 			{
-				"buffer_size": 1075,
+				"buffer_size": 924,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,8 +75,16 @@
 			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 351,
+				"buffer_size": 433,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/fk/Downloads/RM Color Corrected V2.kml",
+			"settings":
+			{
+				"buffer_size": 92000,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -126,8 +142,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/fk/d/rmf",
+		"/home/fk/d/rmf/public",
+		"/home/fk/d/rmf/public/css",
+		"/home/fk/d/rmf/public/views"
+	],
 	"file_history":
 	[
+		"/home/fk/d/rmf/public/css/style.css",
+		"/home/fk/d/rmf/public/views/index.html",
+		"/home/fk/d/rmf/components/jQuery/.bower.json",
 		"/home/fk/d/rmf/public/js/map.js",
 		"/home/fk/d/rmf/public/js/filter.js",
 		"/home/fk/d/rmf/server/server.js",
@@ -175,24 +201,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "components/jQuery/.bower.json",
+					"file": "public/js/map.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 755,
+						"buffer_size": 3328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								107,
+								107
 							]
 						],
 						"settings":
@@ -301,32 +327,62 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": 506.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/views/index.html",
+					"file": "/home/fk/d/rmpgps/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1075,
+						"buffer_size": 3167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								805,
-								805
+								2308,
+								2308
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/views/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								922
 							]
 						],
 						"settings":
@@ -436,7 +492,8 @@
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -446,20 +503,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "public/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 351,
+						"buffer_size": 433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								58,
+								58
 							]
 						],
 						"settings":
@@ -575,7 +632,140 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/fk/Downloads/RM Color Corrected V2.kml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15290,
+								15290
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9363.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
