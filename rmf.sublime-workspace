@@ -5,7 +5,23 @@
 		[
 			[
 				"remove",
-				"removeReddingIshkoodaEast"
+				"removeEurekaMines  (function)"
+			],
+			[
+				"eur",
+				"eurekaMinesCo"
+			],
+			[
+				"bmrr",
+				"bmrrLoopNorthCo"
+			],
+			[
+				"ih",
+				"ishkoodaPair"
+			],
+			[
+				"pair",
+				"pairCoords"
 			],
 			[
 				"add",
@@ -22,10 +38,6 @@
 			[
 				"songo",
 				"songoCo"
-			],
-			[
-				"pair",
-				"pairCoords  (function)"
 			],
 			[
 				"dra",
@@ -75,7 +87,7 @@
 			"file": "public/js/map.js",
 			"settings":
 			{
-				"buffer_size": 7623,
+				"buffer_size": 24906,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +95,7 @@
 			"file": "public/views/index.html",
 			"settings":
 			{
-				"buffer_size": 1245,
+				"buffer_size": 3009,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,27 +103,31 @@
 			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 216,
+				"buffer_size": 217,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/fk/Downloads/RM Color Corrected V2.kml",
-			"settings":
-			{
-				"buffer_size": 92000,
-				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 369.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
+				"colo	",
+				"Color Picker"
+			],
+			[
+				"",
+				"Color Picker"
+			],
+			[
 				"color",
+				"Color Picker"
+			],
+			[
+				"colo",
 				"Color Picker"
 			],
 			[
@@ -170,6 +186,7 @@
 	],
 	"file_history":
 	[
+		"/home/fk/d/rmf/notes.txt",
 		"/home/fk/d/rmpgps/index.html",
 		"/home/fk/d/rmf/public/css/style.css",
 		"/home/fk/d/rmf/public/views/index.html",
@@ -232,15 +249,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7623,
+						"buffer_size": 24906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								577,
-								577
+								22811,
+								22811
 							]
 						],
 						"settings":
@@ -354,7 +371,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1411.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -366,15 +383,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1245,
+						"buffer_size": 3009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1213,
-								1213
+								2957,
+								2957
 							]
 						],
 						"settings":
@@ -488,10 +505,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 106.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -500,15 +517,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 216,
+						"buffer_size": 217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
+								148,
+								148
 							]
 						],
 						"settings":
@@ -624,140 +641,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/fk/Downloads/RM Color Corrected V2.kml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 92000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21340,
-								21340
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 10208.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
