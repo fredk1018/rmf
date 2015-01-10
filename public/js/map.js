@@ -88,61 +88,61 @@ function initialize() {
     path: songoPair,
     strokeColor: '#F97868',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
   reddingIshkoodaEastTrail = new google.maps.Polyline({
     path: reddingIshkoodaEastPair,
     strokeColor: '#F3771D',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
   smytheTrail = new google.maps.Polyline({
     path: smythePair,
     strokeColor: '#2014CA',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
   ishkoodaTrail = new google.maps.Polyline({
     path: ishkoodaPair,
     strokeColor: '#EC15D1',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
     strokeColor: '#00FF3F',
   mineSpur14Trail = new google.maps.Polyline({
     path: mineSpur14Pair,
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
   mineSpur13Trail = new google.maps.Polyline({
     path: mineSpur13Pair,
     strokeColor: '#EB2121',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
    ishkoodaSpur12Trail = new google.maps.Polyline({
     path: ishkoodaSpur12Pair,
     strokeColor: '#A60000',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
    tciConnectorTrail = new google.maps.Polyline({
     path: tciConnectorPair,
     strokeColor: '#00EBFF',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
    bmrrLoopNorthTrail = new google.maps.Polyline({
     path: bmrrLoopNorthPair,
     strokeColor: '#005A37',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
    eurekaMinesTrail = new google.maps.Polyline({
     path: eurekaMinesPair,
     strokeColor: '#FF006A',
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight: 3
   });
 
 
