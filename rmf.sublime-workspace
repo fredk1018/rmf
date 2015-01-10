@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"removeReddingIshkoodaEast"
+			],
+			[
+				"add",
+				"addReddingIshkoodaEast"
+			],
+			[
+				"pai",
+				"function pairCoords	(cList,xList,yList,pList)"
+			],
+			[
+				"y",
+				"yCoords"
+			],
+			[
+				"songo",
+				"songoCo"
+			],
+			[
+				"pair",
+				"pairCoords  (function)"
+			],
+			[
 				"dra",
 				"drawLine"
 			],
@@ -51,7 +75,7 @@
 			"file": "public/js/map.js",
 			"settings":
 			{
-				"buffer_size": 4141,
+				"buffer_size": 7623,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +83,7 @@
 			"file": "public/views/index.html",
 			"settings":
 			{
-				"buffer_size": 934,
+				"buffer_size": 1245,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +91,7 @@
 			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 433,
+				"buffer_size": 216,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,15 +107,15 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 369.0,
 		"selected_items":
 		[
 			[
-				"c",
+				"color",
 				"Color Picker"
 			],
 			[
-				"color",
+				"c",
 				"Color Picker"
 			],
 			[
@@ -142,7 +166,6 @@
 	[
 		"/home/fk/d/rmf",
 		"/home/fk/d/rmf/public",
-		"/home/fk/d/rmf/public/css",
 		"/home/fk/d/rmf/public/views"
 	],
 	"file_history":
@@ -209,15 +232,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4141,
+						"buffer_size": 7623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3669,
-								3669
+								577,
+								577
 							]
 						],
 						"settings":
@@ -343,15 +366,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 1245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								863,
-								863
+								1213,
+								1213
 							]
 						],
 						"settings":
@@ -468,7 +491,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -477,15 +500,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 433,
+						"buffer_size": 216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								160,
+								160
 							]
 						],
 						"settings":
@@ -617,8 +640,8 @@
 						"selection":
 						[
 							[
-								12640,
-								12640
+								21340,
+								21340
 							]
 						],
 						"settings":
@@ -731,10 +754,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7025.0,
+						"translation.y": 10208.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
