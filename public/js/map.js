@@ -1,12 +1,9 @@
 
 // THIS I UR FIDDLE NUm POOP http://jsfiddle.net/6xdur9h0/1/   NOT WORKINGSING COORDINATES NOT FUNCTIONING
-var flightPath;
-var map;
-var xCoords = [];
-var yCoords = [];        
-var i;
-var j;
-var pair = [];
+var flightPath,map,i,j;
+
+var xCoords,yCoords,pair = [];     
+
 
 
 function pairCoords(cList,xList,yList,pList){
@@ -25,18 +22,22 @@ return pList;
 };
 
 
-
-
-function initialize() {
-
+function createMap(){
 //Begin Setting Up Generic Map Info
   var mapOptions = {
     zoom: 15,
     center: new google.maps.LatLng(33.4474907659445,-86.86759306684011),
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+ return map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 //End Setting Up Generic Map Info
+};
+
+
+
+function initialize() {
+map = createMap();
+
 
 //Begin Songo Trail
     //Trail Map Coordinates
