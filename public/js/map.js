@@ -1,8 +1,32 @@
+/*
+http://jsfiddle.net/54haecgv/1/ js fiddle to json model of trails
+var trails = [
+  {
+    trailName: "songo",
+    trailCoordinates: [],
+        trailColor : "#F97868"
+  },
+  {
+    trailName: "riEast",
+    trailCoordinates: [-42,23,-41,24,-41,27],
+        trailColor : "#2014CA"
+  }
+]
 
-// THIS I UR FIDDLE NUm POOP http://jsfiddle.net/6xdur9h0/1/   NOT WORKINGSING COORDINATES NOT FUNCTIONING
-var flightPath,map,i,j;
+here is a text console to output trail info
 
-var xCoords,yCoords,pair = [];     
+
+for(i=0;i<trails.length;++i){console.log(trails[i].trailName+" "+trails[i].trailCoordinates+" "+trails[i].trailColor);}
+
+
+
+
+
+
+ THIS I UR FIDDLE NUm POOP http://jsfiddle.net/6xdur9h0/1/   NOT WORKINGSING COORDINATES NOT FUNCTIONING */
+var flightPath,map,i,j,k;
+
+var xCoords,yCoords,pair,trailList = [];     
 
 
 
@@ -35,9 +59,24 @@ function createMap(){
 
 
 
+//THE FUNCTION THAT WILL HOPEFULLY MaKE THIS LOOK MUCH BETTER
+
+
+function addTrails(data){
+  for(k = 0; k<data.length;++k){
+    
+      data.name = new google.maps.Polyline({
+      path: pairCoords(data.trailCoordinates),
+      strokeColor: data.trailColor,
+      strokeOpacity: 1.0,
+      strokeWeight: 4
+    });
+  };
+  
+};
+
 function initialize() {
 map = createMap();
-
 
 //Begin Songo Trail
     //Trail Map Coordinates
@@ -117,24 +156,28 @@ map = createMap();
     //Creating the Trails
   songoTrail = new google.maps.Polyline({
     path: songoPair,
+    show: false,
     strokeColor: '#F97868',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
   reddingIshkoodaEastTrail = new google.maps.Polyline({
     path: reddingIshkoodaEastPair,
+    show: false,
     strokeColor: '#F3771D',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
   smytheTrail = new google.maps.Polyline({
     path: smythePair,
+    show: false,
     strokeColor: '#2014CA',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
   ishkoodaTrail = new google.maps.Polyline({
     path: ishkoodaPair,
+    show: false,
     strokeColor: '#EC15D1',
     strokeOpacity: 1.0,
     strokeWeight: 4
@@ -142,205 +185,243 @@ map = createMap();
     strokeColor: '#00FF3F',
   mineSpur14Trail = new google.maps.Polyline({
     path: mineSpur14Pair,
+    show: false,
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
   mineSpur13Trail = new google.maps.Polyline({
     path: mineSpur13Pair,
+    show: false,
     strokeColor: '#EB2121',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    ishkoodaSpur12Trail = new google.maps.Polyline({
     path: ishkoodaSpur12Pair,
+    show: false,
     strokeColor: '#A60000',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    tciConnectorTrail = new google.maps.Polyline({
     path: tciConnectorPair,
+    show: false,
     strokeColor: '#00EBFF',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    bmrrLoopNorthTrail = new google.maps.Polyline({
     path: bmrrLoopNorthPair,
+    show: false,
     strokeColor: '#005A37',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    eurekaMinesTrail = new google.maps.Polyline({
     path: eurekaMinesPair,
+    show: false,
     strokeColor: '#313055',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    ikeMastonTrail = new google.maps.Polyline({
     path: ikeMastonPair,
+    show: false,
     strokeColor: '#50FF00',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    southBranchRRBedTrail = new google.maps.Polyline({
     path: southBranchRRBedPair,
+    show: false,
     strokeColor: '#480043',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    unnamedTrail = new google.maps.Polyline({
     path: unnamedPair,
+    show: false,
     strokeColor: '#0085F7',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    reddingIshkoodaWestTrail = new google.maps.Polyline({
     path: reddingIshkoodaWestPair,
+    show: false,
     strokeColor: '#A0A000',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    untitledTrail = new google.maps.Polyline({
     path: untitledPair,
+    show: false,
     strokeColor: '#FFC300',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
    reddingIshkoodaProposedTrail = new google.maps.Polyline({
     path: reddingIshkoodaProposedPair,
+    show: false,
     strokeColor: '#FF0067',
     strokeOpacity: 1.0,
     strokeWeight: 4
   });
     //Add Trails to map
-  addSongo();
-  addReddingIshkoodaEast();
-  addSmythe();
-  addIshkooda();
-  addMineSpur14();
-  addMineSpur13();
-  addIshkoodaSpur12();
-  addTCIConnector();
-  addBMRRLoopNorth();
-  addEurekaMines();
-  addIkeMaston();
-  addSouthBranchRRBed();
-  addUnnamed();
-  addReddingIshkoodaWest();
-  addUntitled();
-  addReddingIshkoodaProposed();
-}
+  addRemoveSongo();
+  addRemoveReddingIshkoodaEast();
+  addRemoveSmythe();
+  addRemoveIshkooda();
+  addRemoveMineSpur14();
+  addRemoveMineSpur13();
+  addRemoveIshkoodaSpur12();
+  addRemoveTCIConnector();
+  addRemoveBMRRLoopNorth();
+  addRemoveEurekaMines();
+  addRemoveIkeMaston();
+  addRemoveSouthBranchRRBed();
+  addRemoveReddingIshkoodaWest();
+  addRemoveReddingIshkoodaProposed();
+};//end initialize
 
 //Functions to add or remove trails to the map.
-function addSongo() {
-  songoTrail.setMap(map);
-};
-function removeSongo() {
-  songoTrail.setMap(null);
-};
-
-function addReddingIshkoodaEast() {
-  reddingIshkoodaEastTrail.setMap(map);
-};
-function removeReddingIshkoodaEast() {
-  reddingIshkoodaEastTrail.setMap(null);
+function addRemoveSongo() {
+  if (songoTrail.show == false){
+    songoTrail.show = true;
+    songoTrail.setMap(map);
+  } else{
+    songoTrail.show = false;
+    songoTrail.setMap(null);
+  };
 };
 
-function addSmythe() {
-  smytheTrail.setMap(map);
-};
-function removeSmythe() {
-  smytheTrail.setMap(null);
-};
-
-function addIshkooda() {
-  ishkoodaTrail.setMap(map);
-};
-function removeIshkooda() {
-  ishkoodaTrail.setMap(null);
+function addRemoveReddingIshkoodaEast() {
+  if (reddingIshkoodaEastTrail.show == false){
+   reddingIshkoodaEastTrail.show = true;
+    reddingIshkoodaEastTrail.setMap(map);
+  } else{
+    reddingIshkoodaEastTrail.show = false;
+    reddingIshkoodaEastTrail.setMap(null);
+  };
 };
 
-function addMineSpur14() {
-  mineSpur14Trail.setMap(map);
-};
-function removeMineSpur14() {
-  mineSpur14Trail.setMap(null);
-};
-
-function addMineSpur13() {
-  mineSpur13Trail.setMap(map);
-};
-function removeMineSpur13() {
-  mineSpur13Trail.setMap(null);
+function addRemoveSmythe() {
+  if (smytheTrail.show == false){
+    smytheTrail.show = true;
+    smytheTrail.setMap(map);
+  } else{
+    smytheTrail.show = false;
+    smytheTrail.setMap(null);
+  };
 };
 
-function addIshkoodaSpur12() {
-  ishkoodaSpur12Trail.setMap(map);
-};
-function removeIshkoodaSpur12() {
-  ishkoodaSpur12Trail.setMap(null);
-};
-
-function addTCIConnector() {
-  tciConnectorTrail.setMap(map);
-};
-function removeTCIConnector() {
-  tciConnectorTrail.setMap(null);
+function addRemoveIshkooda() {
+  if (ishkoodaTrail.show == false){
+    ishkoodaTrail.show = true;
+    ishkoodaTrail.setMap(map);
+  } else{
+    ishkoodaTrail.show = false;
+    ishkoodaTrail.setMap(null);
+  };
 };
 
-function addBMRRLoopNorth() {
-  bmrrLoopNorthTrail.setMap(map);
-};
-function removeBMRRLoopNorth() {
-  bmrrLoopNorthTrail.setMap(null);
-};
-
-function addEurekaMines() {
-  eurekaMinesTrail.setMap(map);
-};
-function removeEurekaMines() {
-  eurekaMinesTrail.setMap(null);
+function addRemoveMineSpur14() {
+  if (mineSpur14Trail.show == false){
+    mineSpur14Trail.show = true;
+    mineSpur14Trail.setMap(map);
+  } else{
+    mineSpur14Trail.show = false;
+    mineSpur14Trail.setMap(null);
+  };
 };
 
-function addIkeMaston() {
-  ikeMastonTrail.setMap(map);
-};
-function removeIkeMaston() {
-  ikeMastonTrail.setMap(null);
-};
-
-function addSouthBranchRRBed() {
-  southBranchRRBedTrail.setMap(map);
-};
-function removeSouthBranchRRBed() {
-  southBranchRRBedTrail.setMap(null);
+function addRemoveMineSpur13() {
+  if (mineSpur13Trail.show == false){
+    mineSpur13Trail.show = true;
+    mineSpur13Trail.setMap(map);
+  } else{
+    mineSpur13Trail.show = false;
+    mineSpur13Trail.setMap(null);
+  };
 };
 
-function addUnnamed() {
-  unnamedTrail.setMap(map);
-};
-function removeUnnamed() {
-  unnamedTrail.setMap(null);
-};
-
-function addReddingIshkoodaWest() {
-  reddingIshkoodaWestTrail.setMap(map);
-};
-function removeReddingIshkoodaWest() {
-  reddingIshkoodaWestTrail.setMap(null);
+function addRemoveIshkoodaSpur12() {
+  if (ishkoodaSpur12Trail.show == false){
+    ishkoodaSpur12Trail.show = true;
+    ishkoodaSpur12Trail.setMap(map);
+  } else{
+    ishkoodaSpur12Trail.show = false;
+    ishkoodaSpur12Trail.setMap(null);
+  };
 };
 
-function addUntitled() {
-  untitledTrail.setMap(map);
-};
-function removeUntitled() {
-  untitledTrail.setMap(null);
+function addRemoveTCIConnector() {
+  if (tciConnectorTrail.show == false){
+    tciConnectorTrail.show = true;
+    tciConnectorTrail.setMap(map);
+  } else{
+    tciConnectorTrail.show = false;
+    tciConnectorTrail.setMap(null);
+  };
 };
 
-function addReddingIshkoodaProposed() {
-  reddingIshkoodaProposedTrail.setMap(map);
+function addRemoveBMRRLoopNorth() {
+  if (bmrrLoopNorthTrail.show == false){
+    bmrrLoopNorthTrail.show = true;
+    bmrrLoopNorthTrail.setMap(map);
+  } else{
+    bmrrLoopNorthTrail.show = false;
+    bmrrLoopNorthTrail.setMap(null);
+  };
 };
-function removeReddingIshkoodaProposed() {
-  reddingIshkoodaProposedTrail.setMap(null);
+
+function addRemoveEurekaMines() {
+  if (eurekaMinesTrail.show == false){
+    eurekaMinesTrail.show = true;
+    eurekaMinesTrail.setMap(map);
+  } else{
+    eurekaMinesTrail.show = false;
+    eurekaMinesTrail.setMap(null);
+  };
+};
+
+function addRemoveIkeMaston() {
+  if (ikeMastonTrail.show == false){
+    ikeMastonTrail.show = true;
+    ikeMastonTrail.setMap(map);
+  } else{
+    ikeMastonTrail.show = false;
+    ikeMastonTrail.setMap(null);
+  };
+};
+
+function addRemoveSouthBranchRRBed() {
+  if (southBranchRRBedTrail.show == false){
+    southBranchRRBedTrail.show = true;
+    southBranchRRBedTrail.setMap(map);
+  } else{
+    southBranchRRBedTrail.show = false;
+    southBranchRRBedTrail.setMap(null);
+  };
+};
+
+function addRemoveReddingIshkoodaWest() {
+  if (reddingIshkoodaWestTrail.show == false){
+   reddingIshkoodaWestTrail.show = true;
+    reddingIshkoodaWestTrail.setMap(map);
+  } else{
+    reddingIshkoodaWestTrail.show = false;
+    reddingIshkoodaWestTrail.setMap(null);
+  };
+};
+
+function addRemoveReddingIshkoodaProposed() {
+  if (reddingIshkoodaProposedTrail.show == false){
+   reddingIshkoodaProposedTrail.show = true;
+    reddingIshkoodaProposedTrail.setMap(map);
+  } else{
+    reddingIshkoodaProposedTrail.show = false;
+    reddingIshkoodaProposedTrail.setMap(null);
+  };
 };
 
 
