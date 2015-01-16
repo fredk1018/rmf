@@ -1,8 +1,8 @@
 #map-canvas{
-	height: fill !important;
-	width: fill !important;
-	min-height: 500px;
-	min-width: 500px;
+	height: 80% !important;
+	width: 100% !important;
+	min-height: 350px;
+	min-width: 350px;
 	background-color:red;
 	margin:0px;
 	padding:0px;
