@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Trail Map</title>
@@ -10,54 +11,73 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 	<script type="text/javascript" src="/js/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/map.js"></script>
-	<script type="text/javascript" src="/js/filter.js"></script>
+	<script type="text/javascript" src="/js/slider.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body class="container">
-  <div id="map-canvas" class="row"></div>
-    <div id="panel">
-      <div class="row">
-        <input onclick="addRemoveSongo();" type=button value="Add/Remove Songo Trail">
-      </div>
-      <div class="row">
+  <div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanel"> 
+  <ul>
+   <li>
+      <input onclick="addRemoveSongo();" type=button value="Add/Remove Songo Trail">
+      </li>
+      <li>
         <input onclick="addRemoveReddingIshkoodaEast();" type=button value="Add/Remove Redding/Ishkooda(east) Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveSmythe();" type=button value="Add/Remove Smythe Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemovesIhkooda();" type=button value="Add/Remove Ishkooda Overlook Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveMineSpur14();" type=button value="Add/Remove #14 Mine Spur Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveMineSpur13();" type=button value="Add/Remove #13 Mine Spur Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveIshkoodaSpur12();" type=button value="Add/Remove #12 Mine Ishkooda Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveTCIConnector();" type=button value="Add/Remove TCI Connecttor Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveBMRRLoopNorth();" type=button value="Add/Remove BMRR Loop Trail, North">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveEurekaMines();" type=button value="Add/Remove Eureka Mines Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveIkeMaston();" type=button value="Add/Remove Ike Maston Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveSouthBranchRRBed();" type=button value="Add/Remove South Branch RR Bed Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveReddingIshkoodaWest();" type=button value="Add/Remove Redding/Ishkooda(west) Trail">
-      </div>
-      <div class="row">
+      </li>
+      <li>
         <input onclick="addRemoveReddingIshkoodaProposed();" type=button value="Add/Remove Redding/Ishkooda(proposed) Trail"> 
-      </div>
-    </div>
+      </li> 
+    </ul>
+  </div> 
+
+  <div data-role="header">
+    <h1>Page Header</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <div id="map-canvas"></div>  
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Page Footer</h1>
+  </div> 
+</div> 
   </body>
 </html>
 
