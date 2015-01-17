@@ -79,4 +79,7 @@
 	.navbar{
 		opacity: .5;
 	}
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+		max-height:100% !important;
+	}
 }
