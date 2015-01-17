@@ -1,42 +1,6 @@
+ html, body,#map-ca, #map-canvas { height: 100%; margin: 0; padding: 0;}
 
 
-
-@media (max-height: 300px){
-	#map-canvas{
-	background-color: red;
-	height:300px;
-}
-}
-@media (max-height: 350px){
-	#map-canvas{
-	background-color: red;
-	height:350px;
-}
-}
-@media (max-height: 400px){
-	#map-canvas{
-	background-color: red;
-	height:400px;
-}
-}
-@media (max-height: 500px){
-	#map-canvas{
-	background-color: red;
-	height:500px;
-}
-}
-@media (max-height: 450px){
-	#map-canvas{
-	background-color: red;
-	height:450px;
-}
-}
-@media (max-height: 550px){
-	#map-canvas{
-	background-color: red;
-	height:550px;
-}
-}
 @media (max-width: 2000px) {
     .navbar-header {
         float: none;
@@ -71,10 +35,6 @@
     }
     .collapse.in{
   		display:block !important;
-	}
-	#map-canvas{
-	background-color: red;
-	height:550px;
 	}
 	.navbar{
 		opacity: .5;
