@@ -1,6 +1,10 @@
  html, body,#map-ca, #map-canvas { height: 100%; margin: 0; padding: 0;}
-
-
+a{
+ 	color: red !important;
+ }
+.glyphicon{
+	color:red !important;
+}
 @media (max-width: 2000px) {
     .navbar-header {
         float: none;
