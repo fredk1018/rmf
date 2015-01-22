@@ -49,7 +49,7 @@ return pList;
 function createMap(){
 //Begin Setting Up Generic Map Info
   var mapOptions = {
-    zoom: 14,
+    zoom: 15,
     center: new google.maps.LatLng(33.4474907659445,-86.86759306684011),
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
@@ -159,112 +159,112 @@ map = createMap();
     show: false,
     strokeColor: '#F97868',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
   reddingIshkoodaEastTrail = new google.maps.Polyline({
     path: reddingIshkoodaEastPair,
     show: false,
     strokeColor: '#F3771D',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
   smytheTrail = new google.maps.Polyline({
     path: smythePair,
     show: false,
     strokeColor: '#2014CA',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
   ishkoodaTrail = new google.maps.Polyline({
     path: ishkoodaPair,
     show: false,
     strokeColor: '#EC15D1',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
     strokeColor: '#00FF3F',
   mineSpur14Trail = new google.maps.Polyline({
     path: mineSpur14Pair,
     show: false,
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
   mineSpur13Trail = new google.maps.Polyline({
     path: mineSpur13Pair,
     show: false,
     strokeColor: '#EB2121',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    ishkoodaSpur12Trail = new google.maps.Polyline({
     path: ishkoodaSpur12Pair,
     show: false,
     strokeColor: '#A60000',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    tciConnectorTrail = new google.maps.Polyline({
     path: tciConnectorPair,
     show: false,
     strokeColor: '#00EBFF',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    bmrrLoopNorthTrail = new google.maps.Polyline({
     path: bmrrLoopNorthPair,
     show: false,
     strokeColor: '#005A37',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    eurekaMinesTrail = new google.maps.Polyline({
     path: eurekaMinesPair,
     show: false,
     strokeColor: '#313055',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    ikeMastonTrail = new google.maps.Polyline({
     path: ikeMastonPair,
     show: false,
     strokeColor: '#50FF00',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    southBranchRRBedTrail = new google.maps.Polyline({
     path: southBranchRRBedPair,
     show: false,
     strokeColor: '#480043',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    unnamedTrail = new google.maps.Polyline({
     path: unnamedPair,
     show: false,
     strokeColor: '#0085F7',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    reddingIshkoodaWestTrail = new google.maps.Polyline({
     path: reddingIshkoodaWestPair,
     show: false,
     strokeColor: '#A0A000',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    untitledTrail = new google.maps.Polyline({
     path: untitledPair,
     show: false,
     strokeColor: '#FFC300',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
    reddingIshkoodaProposedTrail = new google.maps.Polyline({
     path: reddingIshkoodaProposedPair,
     show: false,
     strokeColor: '#FF0067',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 3
   });
     //Add Trails to map
   addRemoveSongo();
