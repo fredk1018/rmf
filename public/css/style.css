@@ -17,7 +17,6 @@ body{
     z-index: 100;
     position:absolute;
     display: none;
-    bottom:0;
 }
 .menu > ul {
     height:100%;
@@ -50,6 +49,5 @@ body{
 .active{background-color:red!important;}
 .showMenu{
     position:relative; 
-    bottom:-94%;
     z-index:101;
 }
