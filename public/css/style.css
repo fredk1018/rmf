@@ -13,7 +13,7 @@ body{
     background-color: red;
     width:100%;
     float: left;
-    z-index: 1000;
+    z-index: 100;
     position:absolute;
     display: none;
     bottom:0;
@@ -39,6 +39,7 @@ body{
     height:100%;
 }
 #map-canvas{
+
     max-width:900px;
     position:absolute;
     height:90%;
@@ -48,6 +49,6 @@ body{
 .active{background-color:red!important;}
 .showMenu{
     position:relative; 
-    bottom:-90%;
-    z-index:1001;
+    bottom:-94%;
+    z-index:101;
 }
