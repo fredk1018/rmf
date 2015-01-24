@@ -12,72 +12,60 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 	<script type="text/javascript" src="/js/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/map.js"></script>
-	<script type="text/javascript" src="/js/panel.js"></script>
+	<script type="text/javascript" src="/js/menu.js"></script>
   </head>
      
-  <nav class="navbar navbar-fixed-bottom">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="#">RMP</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-     <i class="fa fa-list fa-3x" style="color:red;"></i>
-     
-    </button>
-  </div>
-  <div class="navbar-collapse collapse row">
-    <ul class="nav navbar-nav">
-    <div class="col-md-6">
+
+<body>
+  <button class="showMenu"> SHOW THE MENU</button>
+  <div class="menu">
+    <ul>
       <li>
-      <a href="#" onclick="addRemoveSongo();">Add/Remove Songo Trail</a>
+      <button onclick="addRemoveSongo();">Add/Remove Songo</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveReddingIshkoodaEast();">Add/Remove Redding/Ishkooda(east) Trail</a>
+        <button onclick="addRemoveReddingIshkoodaEast();">Add/Remove Redding/Ishkooda(east)</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveSmythe();">Add/Remove Smythe Trail</a>
+        <button onclick="addRemoveSmythe();">Add/Remove Smythe</button>
       </li>
       <li>
-        <a href="#" onclick="addRemovesIshkooda();">Add/Remove Ishkooda Overlook Trail</a>
+        <button onclick="addRemovesIshkooda();">Add/Remove Ishkooda Overlook</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveMineSpur14();">Add/Remove #14 Mine Spur Trail</a>
+        <button onclick="addRemoveMineSpur14();">Add/Remove #14 Mine Spur</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveMineSpur13();">Add/Remove #13 Mine Spur Trail</a>
+        <button onclick="addRemoveMineSpur13();">Add/Remove #13 Mine Spur</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveIshkoodaSpur12();">Add/Remove #12 Mine Ishkooda Trail</a>
-      </li>
-      </div>
-      <div class="col-md-6">
-      <li>
-        <a href="#" onclick="addRemoveTCIConnector();">Add/Remove TCI Connecttor Trail</a>
+        <button onclick="addRemoveIshkoodaSpur12();">Add/Remove #12 Mine Ishkooda</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveBMRRLoopNorth();">Add/Remove BMRR Loop Trail, North</a>
+        <button onclick="addRemoveTCIConnector();">Add/Remove TCI Connecttor</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveEurekaMines();">Add/Remove Eureka Mines Trail</a>
+        <button onclick="addRemoveBMRRLoopNorth();">Add/Remove BMRR North</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveIkeMaston();">Add/Remove Ike Maston Trail</a>
+        <button onclick="addRemoveEurekaMines();">Add/Remove Eureka Mines</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveSouthBranchRRBed();">Add/Remove South Branch RR Bed Trail</a>
+        <button onclick="addRemoveIkeMaston();">Add/Remove Ike Maston</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveReddingIshkoodaWest();">Add/Remove Redding/Ishkooda(west) Trail</a>
+        <button onclick="addRemoveSouthBranchRRBed();">Add/Remove South Branch RR Bed</button>
       </li>
       <li>
-        <a href="#" onclick="addRemoveReddingIshkoodaProposed();">Add/Remove Redding/Ishkooda(proposed) Trail</a>
+        <button onclick="addRemoveReddingIshkoodaWest();">Add/Remove Redding/Ishkooda(west)</button>
+      </li>
+      <li>
+        <button onclick="addRemoveReddingIshkoodaProposed();">Add/Remove Redding/Ishkooda(proposed)</button>
       </li>  
     </ul>
   </div>
-</nav>
-<body>
-<div class="container-fluid" id ="map-ca">
-  
   <div id="map-canvas"></div>
-</div>
+
 </body>
 </html>
 
