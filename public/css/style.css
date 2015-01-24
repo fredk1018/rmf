@@ -8,6 +8,7 @@ body{
     background-color: blue;
 }
 .menu{  
+    max-width:900px;
     height:100%;
     background-color: red;
     width:100%;
@@ -15,6 +16,7 @@ body{
     z-index: 1000;
     position:absolute;
     display: none;
+    bottom:0;
 }
 .menu > ul {
     height:100%;
@@ -37,9 +39,15 @@ body{
     height:100%;
 }
 #map-canvas{
+    max-width:900px;
     position:absolute;
     height:90%;
     width:100%;
 }
 
 .active{background-color:red!important;}
+.showMenu{
+    position:relative; 
+    bottom:-90%;
+    z-index:1001;
+}
