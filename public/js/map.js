@@ -425,21 +425,10 @@ function addRemoveReddingIshkoodaProposed() {
 };
 
 
+
+
 google.maps.event.addDomListener(window, 'load', initialize)
 
 
 
 
-$(document).ready(function(){
-	
-	//click handler for filter buttons
-	$('#filters').on('click','.hideT',function(){
-		console.log('remove line');
-	});
-
-
-	$('#filters').on('click','.showT',function(){
-		console.log('show line');
-	});
-
-});
