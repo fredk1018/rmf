@@ -159,129 +159,137 @@ map = createMap();
     show: false,
     strokeColor: '#F97868',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.songo'
   });
   reddingIshkoodaEastTrail = new google.maps.Polyline({
     path: reddingIshkoodaEastPair,
     show: false,
     strokeColor: '#F3771D',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.reddingIshkoodaEast'
   });
   smytheTrail = new google.maps.Polyline({
     path: smythePair,
     show: false,
     strokeColor: '#2014CA',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.smythe'
   });
   ishkoodaTrail = new google.maps.Polyline({
     path: ishkoodaPair,
     show: false,
     strokeColor: '#EC15D1',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.ishkoodaOverlook'
   });
     strokeColor: '#00FF3F',
   mineSpur14Trail = new google.maps.Polyline({
     path: mineSpur14Pair,
     show: false,
+    strokeColor: '#FFD500',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.mineSpur14'
   });
   mineSpur13Trail = new google.maps.Polyline({
     path: mineSpur13Pair,
     show: false,
     strokeColor: '#EB2121',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.mineSpur13'
   });
    ishkoodaSpur12Trail = new google.maps.Polyline({
     path: ishkoodaSpur12Pair,
     show: false,
     strokeColor: '#A60000',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.reddingIshkoodaSpur12'
   });
    tciConnectorTrail = new google.maps.Polyline({
     path: tciConnectorPair,
     show: false,
     strokeColor: '#00EBFF',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.TCIConnector'
   });
    bmrrLoopNorthTrail = new google.maps.Polyline({
     path: bmrrLoopNorthPair,
     show: false,
     strokeColor: '#005A37',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.BMRRLoopNorth'
   });
    eurekaMinesTrail = new google.maps.Polyline({
     path: eurekaMinesPair,
     show: false,
     strokeColor: '#313055',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.eurekaMines'
   });
    ikeMastonTrail = new google.maps.Polyline({
     path: ikeMastonPair,
     show: false,
     strokeColor: '#50FF00',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.ikeMaston'
   });
    southBranchRRBedTrail = new google.maps.Polyline({
     path: southBranchRRBedPair,
     show: false,
     strokeColor: '#480043',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.southBranchRRBed'
   });
-   unnamedTrail = new google.maps.Polyline({
+   /*unnamedTrail = new google.maps.Polyline({
     path: unnamedPair,
     show: false,
     strokeColor: '#0085F7',
     strokeOpacity: 1.0,
     strokeWeight: 3
-  });
+  });*/
    reddingIshkoodaWestTrail = new google.maps.Polyline({
     path: reddingIshkoodaWestPair,
     show: false,
     strokeColor: '#A0A000',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.reddingIshkoodaWest'
   });
-   untitledTrail = new google.maps.Polyline({
+   /*untitledTrail = new google.maps.Polyline({
     path: untitledPair,
     show: false,
     strokeColor: '#FFC300',
     strokeOpacity: 1.0,
     strokeWeight: 3
-  });
+  });*/
    reddingIshkoodaProposedTrail = new google.maps.Polyline({
     path: reddingIshkoodaProposedPair,
     show: false,
     strokeColor: '#FF0067',
     strokeOpacity: 1.0,
-    strokeWeight: 3
+    strokeWeight: 3,
+    cssClass: '.reddingIshkoodaProposed'
   });
     //Add Trails to map
-  addRemoveSongo();
-  addRemoveReddingIshkoodaEast();
-  addRemoveSmythe();
-  addRemoveIshkooda();
-  addRemoveMineSpur14();
-  addRemoveMineSpur13();
-  addRemoveIshkoodaSpur12();
-  addRemoveTCIConnector();
-  addRemoveBMRRLoopNorth();
-  addRemoveEurekaMines();
-  addRemoveIkeMaston();
-  addRemoveSouthBranchRRBed();
-  addRemoveReddingIshkoodaWest();
-  addRemoveReddingIshkoodaProposed();
+    
+  
+    
+   
+
+  showAllTrails();
 };//end initialize
+
 
 //Functions to add or remove trails to the map.
 function addRemoveSongo() {
@@ -298,6 +306,7 @@ function addRemoveReddingIshkoodaEast() {
   if (reddingIshkoodaEastTrail.show == false){
    reddingIshkoodaEastTrail.show = true;
     reddingIshkoodaEastTrail.setMap(map);
+
   } else{
     reddingIshkoodaEastTrail.show = false;
     reddingIshkoodaEastTrail.setMap(null);
@@ -424,6 +433,92 @@ function addRemoveReddingIshkoodaProposed() {
   };
 };
 
+function showAllTrails(){
+  songoTrail.setMap(map);
+  songoTrail.show = true;
+
+  reddingIshkoodaEastTrail.setMap(map);
+  reddingIshkoodaEastTrail.show = true;
+
+  smytheTrail.setMap(map);
+  smytheTrail.show = true;
+
+  ishkoodaTrail.setMap(map);
+  ishkoodaTrail.show = true;
+
+  mineSpur14Trail.setMap(map);
+  mineSpur14Trail.show = true;
+
+  mineSpur13Trail.setMap(map);
+  mineSpur13Trail.show = true;
+
+  ishkoodaSpur12Trail.setMap(map);
+  ishkoodaSpur12Trail.show = true;
+
+  tciConnectorTrail.setMap(map);
+  tciConnectorTrail.show = true;
+
+  bmrrLoopNorthTrail.setMap(map);
+  bmrrLoopNorthTrail.show = true;
+
+  eurekaMinesTrail.setMap(map);
+  eurekaMinesTrail.show = true;
+
+  ikeMastonTrail.setMap(map);
+  ikeMastonTrail.show = true;
+
+  southBranchRRBedTrail.setMap(map);
+  southBranchRRBedTrail.show = true;
+
+  reddingIshkoodaWestTrail.setMap(map);
+  reddingIshkoodaWestTrail.show = true;
+
+  reddingIshkoodaProposedTrail.setMap(map);
+  reddingIshkoodaProposedTrail.show = true;
+};
+  function hideAllTrails(){
+  songoTrail.setMap(null);
+  songoTrail.show = false;
+
+  reddingIshkoodaEastTrail.setMap(null);
+  reddingIshkoodaEastTrail.show = false;
+
+  smytheTrail.setMap(null);
+  smytheTrail.show = false;
+
+  ishkoodaTrail.setMap(null);
+  ishkoodaTrail.show = false;
+
+  mineSpur14Trail.setMap(null);
+  mineSpur14Trail.show = false;
+
+  mineSpur13Trail.setMap(null);
+  mineSpur13Trail.show = false;
+
+  ishkoodaSpur12Trail.setMap(null);
+  ishkoodaSpur12Trail.show = false;
+
+  tciConnectorTrail.setMap(null);
+  tciConnectorTrail.show = false;
+
+  bmrrLoopNorthTrail.setMap(null);
+  bmrrLoopNorthTrail.show = false;
+
+  eurekaMinesTrail.setMap(null);
+  eurekaMinesTrail.show = false;
+
+  ikeMastonTrail.setMap(null);
+  ikeMastonTrail.show = false;
+
+  southBranchRRBedTrail.setMap(null);
+  southBranchRRBedTrail.show = false;
+
+  reddingIshkoodaWestTrail.setMap(null);
+  reddingIshkoodaWestTrail.show = false;
+
+  reddingIshkoodaProposedTrail.setMap(null);
+  reddingIshkoodaProposedTrail.show = false;
+};
 
 
 
