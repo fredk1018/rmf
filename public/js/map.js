@@ -186,7 +186,6 @@ map = createMap();
     strokeWeight: 3,
     cssClass: '.ishkoodaOverlook'
   });
-    strokeColor: '#00FF3F',
   mineSpur14Trail = new google.maps.Polyline({
     path: mineSpur14Pair,
     show: false,
