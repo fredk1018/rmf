@@ -1,9 +1,20 @@
 $(function() {
     console.log( "ready!" );
-
+    var menuIsOpen = false;
 
 
     $('.showMenu').on('click',function(){
+    	if(menuIsOpen === true)
+    	{
+    		$(this).rotate({animateTo:0});
+    		menuIsOpen = false;
+    	}else{
+    		$(this).rotate({animateTo:180});
+    		menuIsOpen = true;
+    	}
+
+
+    	
     	var list = [songoTrail,reddingIshkoodaEastTrail,smytheTrail,ishkoodaTrail,mineSpur14Trail,mineSpur13Trail,ishkoodaSpur12Trail,tciConnectorTrail,bmrrLoopNorthTrail,eurekaMinesTrail,ikeMastonTrail,southBranchRRBedTrail,reddingIshkoodaWestTrail,reddingIshkoodaProposedTrail];	
 		var i;
    		for(i=0;i < list.length;++i){
@@ -16,7 +27,7 @@ $(function() {
    			$(list[i].cssClass).css("color","black");
    			};
    		}
-   		
+
     	 $( ".menu" ).slideToggle( "fast", function() {
     // Animation complete.
   		 });

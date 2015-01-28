@@ -66,15 +66,23 @@ body{
 .showMenu{
     z-index:101;
     position:relative;
-    top:76vh;
+    bottom:-76vh;
     text-align:center;
-    width:100%;
     color:#B0122B;
 }
 
-.songo{
-    
+i
+{
+    padding: 5px 10px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-box-shadow: 0px 0px 2px red;
+    -webkit-box-shadow: 0px 0px 2px red;
+    box-shadow: 0px 0px 2px red;
 }
+
 
 @media screen and (min-width: 900px) {
     body {
