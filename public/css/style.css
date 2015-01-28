@@ -73,10 +73,11 @@ body{
 {
 display: inline;
 list-style-type: none;
+vertical-align: middle;
 }
 #navlist ul li a img,i
 {
-max-width: 30%!important;
+max-width: 20%!important;
 }
 .showMenu{
     z-index:101;
@@ -88,7 +89,6 @@ max-width: 30%!important;
 i
 {
     padding: 5px 10px;
-    display: inline-block;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
@@ -96,6 +96,7 @@ i
     -webkit-box-shadow: 0px 0px 2px red;
     box-shadow: 0px 0px 2px red;
     float:right;
+    position: relative;
 }
 
 
@@ -112,6 +113,10 @@ i
     .menu{
         max-width: 50%;
         margin-left: 25%;
+    }
+    #navlist{
+        max-width: 50%;
+        margin-left:25%;
     }
 
 }
