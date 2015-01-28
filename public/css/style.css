@@ -15,12 +15,14 @@ body{
     max-width:900px;
     height:80%;
     background-color: red;
-    width:100%;
+    width:90%;
     float: left;
     z-index: 100;
     position:absolute;
     display: none;
     opacity: .6;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .menu > ul {
     height:100%;
@@ -28,6 +30,7 @@ body{
     padding-right:0px;
     margin-right: 0px;
     list-style-type: none;
+     display: inline;
 }
 
 .menu > ul > li{
@@ -66,7 +69,6 @@ body{
     padding-left:0px;
     margin-left:0px;
 }
-
 #navlist ul li
 {
 display: inline;
@@ -74,12 +76,11 @@ list-style-type: none;
 }
 #navlist ul li a img,i
 {
-max-width: 30%;
+max-width: 30%!important;
 }
 .showMenu{
     z-index:101;
     position:relative;
-    bottom:0px;
     text-align:center;
     color:#B0122B;
 }

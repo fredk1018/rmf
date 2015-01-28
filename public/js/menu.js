@@ -1,3 +1,4 @@
+//#869699 this is ethernet order #
 $(function() {
     console.log( "ready!" );
     var menuIsOpen = false;
