@@ -15,7 +15,7 @@ $(function() {
 
 
     	
-    	var list = [songoTrail,reddingIshkoodaEastTrail,smytheTrail,ishkoodaTrail,mineSpur14Trail,mineSpur13Trail,ishkoodaSpur12Trail,tciConnectorTrail,bmrrLoopNorthTrail,eurekaMinesTrail,ikeMastonTrail,southBranchRRBedTrail,reddingIshkoodaWestTrail,reddingIshkoodaProposedTrail];	
+    var list = [songoTrail,reddingIshkoodaEastTrail,smytheTrail,ishkoodaTrail,mineSpur14Trail,mineSpur13Trail,ishkoodaSpur12Trail,tciConnectorTrail,bmrrLoopNorthTrail,eurekaMinesTrail,ikeMastonTrail,southBranchRRBedTrail,reddingIshkoodaWestTrail,reddingIshkoodaProposedTrail];	
 		var i;
    		for(i=0;i < list.length;++i){
    			if(list[i].show === true)
