@@ -20,6 +20,7 @@ body{
     position:absolute;
     display: none;
     opacity: .6;
+    bottom:12%;
 }
 .menu > ul {
     height:100%;
@@ -66,7 +67,8 @@ body{
 .showMenu{
     z-index:101;
     position:relative;
-    bottom:-76vh;
+    margin-top:125%;
+    bottom:0px;
     text-align:center;
     color:#B0122B;
 }
